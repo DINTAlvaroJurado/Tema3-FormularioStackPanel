@@ -1,0 +1,45 @@
+﻿<Window x:Class="Tema3_FormularioStackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_FormularioStackPanel"
+        mc:Ignorable="d"
+        Title="Formulario" Height="450" Width="500" MinWidth="400" MaxWidth="900" Icon="assets/Yingfengling-Fl-I-Love-Sports-Basketball.ico">
+    <StackPanel Margin="5">
+        <StackPanel Margin="5,5,5,15">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="red" Offset="0.3"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label FontSize="16" FontWeight="Bold" Margin="5">Nombre</Label>
+            <TextBox Margin="5,0,5,15"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="5,5,5,15">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Yellow" Offset="0.3"/>
+                    <GradientStop Color="Green" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label FontSize="16" FontWeight="Bold" Margin="5">Dirección</Label>
+            <TextBox Margin="5,0,5,15"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="5,5,5,15">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="AliceBlue" Offset="0.3"/>
+                    <GradientStop Color="#FF630080" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label FontSize="16" FontWeight="Bold" Margin="5">Correo Electrónico</Label>
+            <TextBox Margin="5,0,5,15" Width="600" HorizontalAlignment="Left"></TextBox>
+        </StackPanel>
+        <WrapPanel HorizontalAlignment="Right">
+            <Button Margin="3" Width="100">Aceptar</Button>
+            <Button Margin="3" Width="100">Cancelar</Button>
+        </WrapPanel>
+    </StackPanel>
+</Window>
